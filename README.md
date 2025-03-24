@@ -27,7 +27,7 @@ Backend :
 2.Spacy: An advanced NLP library that efficiently extracts entities like party names, amounts, penalties, and key clauses.
 
 Frontend : 
-1. Any UI/UX or flutter. 
+1. Figma /HTML /CSS / React . 
 2. API integration.
 
 Data Handling:
@@ -35,7 +35,8 @@ PyPDF2 / pdfplumber / docx
 Accept PDFs, Word docs, etc.
 
 Future Plans : 
-1.Risk Scoring : will provide risk score out ot 100 points. ..For eg: document is highly risked if its has 1) vague deadline, 2) No info about penalty for delayed payment , 3) missing dispute resolution etc.
+
+1.Risk Scoring : will provide risk score out ot 100 points. ..For eg: document is highly risked if it has 1) vague deadline, 2) No info about penalty for delayed payment , 3) missing dispute resolution etc.
 
 2. Using AI to provide recommendations to suggest actionable advice for reducing risk. Eg : add clear deadlines for payment.
    
@@ -58,7 +59,7 @@ Go to : http://localhost:8000
 
 ![image](https://github.com/user-attachments/assets/ac824c8f-5a80-4bba-b43b-d8e14b01753c)
 
-Upload document  adn click on analyse dcoument:
+Upload document  and click on analyse dcoument:
 
 ![image](https://github.com/user-attachments/assets/091ed8fc-e417-4b16-a394-86ee793c9a68)
 
@@ -66,6 +67,11 @@ Output:
 
 ![image](https://github.com/user-attachments/assets/1c13e336-cbb9-4a5f-9ee2-1fcb200aa565)
 
+More features is to be added as per written above in "Future Plans".
 
+
+Video: 
+
+https://github.com/user-attachments/assets/868f74f0-cc41-42e8-b898-d50ac503a8e9
 
 
