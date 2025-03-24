@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Legal Document Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Legal Document Analyzer</h1>
+    <h1>               ~By team Erroriz</h1>
+    <form id="upload-form" enctype="multipart/form-data">
+        <input type="file" id="file-input" name="file">
+        <button type="submit">Analyze Document</button>
+    </form>
+
+    <div id="results"></div>
+
+    <script>
+        const form = document.getElementById('upload-form');
+        const resultsDiv = document.getElementById('results');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const fileInput = document.getElementById('file-input').files[0];
+            const formData = new FormData();
+            formData.append("file", fileInput);
+
+            const response = await fetch("/analyze/", {
+                method: "POST",
+                body: formData
+            });
+
+            const result = await response.json();
+
+            resultsDiv.innerHTML = `
+                <h2>Analysis Results</h2>
+                <h3>Important Clauses</h3>
+                <p>${result.important_clauses.join('<br>')}</p>
+
+                <h3>Parties</h3>
+                <p>${result.parties.join(', ')}</p>
+
+                <h3>Amounts</h3>
+                <p>${result.amounts.join(', ')}</p>
+
+                <h3>Penalties with Context</h3>
+                <p>${result.penalties_with_context.join('<br>')}</p>
+            `;
+        });
+    </script>
+
+<hr><h3>Team:</h3>
+<h4>1.Nikunj Maru</h4>
+<h4>2. Dhruv Karani</h4>
+<h4>3.Amogh Iyer</h4>
+<h4>4.Tanishq Chaudhari</h4>
+</body>
+</html>
