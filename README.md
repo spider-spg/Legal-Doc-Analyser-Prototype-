@@ -75,3 +75,11 @@ Video:
 https://github.com/user-attachments/assets/868f74f0-cc41-42e8-b898-d50ac503a8e9
 
 
+Frontend Prototype : 
+
+![image](https://github.com/user-attachments/assets/65cc7395-50d1-4c45-ad03-3fd63f18ba1f)
+
+https://github.com/user-attachments/assets/057937be-a324-47de-a18a-d5ded29c361b
+
+
+
